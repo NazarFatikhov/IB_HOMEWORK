@@ -29,5 +29,5 @@ class ByteSequenceTest(unittest.TestCase):
         self.assertEqual(self.res_xor.hex(), res_byte_seq.full_bytes(res_byte_seq).hex())
 
     def test_lor(self):
-        res_byte_seq = self.byte_sequence.lor(self.byte_sequence, self.count_lor)
+        res_byte_seq = self.byte_sequence.rol(self.byte_sequence, self.count_lor)
         self.assertEqual(self.res_lor, res_byte_seq.full_bytes(res_byte_seq))
